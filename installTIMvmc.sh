@@ -12,6 +12,7 @@ sudo chmod 0755 /home/pi/Documents/SimulatedVMCupdate.sh
 sudo chmod 0755 /home/pi/Documents/st.sh
 sudo chmod 0755 /home/pi/Documents/update.sh
 # New hostname
+sudo apt-get install avahi-daemon
 sudo hostname worldlinetim
 # Android platform tools installation and configuration for Valina
 sudo apt-get install -y android-sdk-platform-tools
