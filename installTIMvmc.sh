@@ -7,10 +7,10 @@ sudo apt-get install p7zip-full
 wget -O '/home/pi/Documents/TIMvmcSimFirstInstallation.zip' 'https://github.com/smarterbaxter/TIMvmc/raw/main/TIMvmcSimFirstInstallation.zip'
 7z x /home/pi/Documents/TIMvmcSimFirstInstallation.zip -p$pwd -o/home/pi/Documents
 rm /home/pi/Documents/TIMvmcSimFirstInstallation.zip
-sudo chmod 0755 /home/pi/Documents/SimulatedVMC/restartValina.sh
-sudo chmod 0755 /home/pi/Documents/SimulatedVMC/SimulatedVMCupdate.sh
-sudo chmod 0755 /home/pi/Documents/SimulatedVMC/st.sh
-sudo chmod 0755 /home/pi/Documents/SimulatedVMC/update.sh
+sudo chmod 0755 /home/pi/Documents/restartValina.sh
+sudo chmod 0755 /home/pi/Documents/SimulatedVMCupdate.sh
+sudo chmod 0755 /home/pi/Documents/st.sh
+sudo chmod 0755 /home/pi/Documents/update.sh
 # New hostname
 sudo hostname worldlinetim
 # Android platform tools installation and configuration for Valina
@@ -23,4 +23,4 @@ sudo mv /home/pi/Documents/vmc.service /etc/systemd/system/vmc.service
 sudo systemctl daemon-reload
 sudo systemctl enable vmc.service
 # Downloading the last version of the Simulated VMC
-sh /home/pi/Documents/SimulatedVMC/update.sh
+sh /home/pi/Documents/update.sh
