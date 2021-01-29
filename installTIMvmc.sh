@@ -4,7 +4,7 @@ read pwd
 # Installing tools
 sudo apt-get install p7zip-full
 # Downloading the scripts
-wget -O '/home/pi/Documents' 'https://github.com/smarterbaxter/TIMvmc/raw/main/TIMvmcSimFirstInstallation.zip'
+wget -O '/home/pi/Documents/TIMvmcSimFirstInstallation.zip' 'https://github.com/smarterbaxter/TIMvmc/raw/main/TIMvmcSimFirstInstallation.zip'
 7z x /home/pi/Documents/TIMvmcSimFirstInstallation.zip -p$pwd -o/home/pi/Documents
 rm /home/pi/Documents/TIMvmcSimFirstInstallation.zip
 sudo chmod 0755 /home/pi/Documents/SimulatedVMC/restartValina.sh
