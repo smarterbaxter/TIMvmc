@@ -13,7 +13,9 @@ sudo chmod 0755 /home/pi/Documents/st.sh
 sudo chmod 0755 /home/pi/Documents/update.sh
 # New hostname
 sudo apt-get install avahi-daemon
-sudo hostname worldlinetim
+touch /home/pi/Documents/hostname
+echo worldlinetim >> /home/pi/Documents/hostname
+sudo mv /home/pi/Documents/hostname /etc/hostname
 # Android platform tools installation and configuration for Valina
 sudo apt-get install -y android-sdk-platform-tools
 sudo rm /etc/udev/rules.d/51-android.rules
